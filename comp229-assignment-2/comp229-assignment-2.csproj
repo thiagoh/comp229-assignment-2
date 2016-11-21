@@ -181,6 +181,45 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\images\bacalhau-1.jpg" />
+    <Content Include="Assets\images\bacalhau-2.jpg" />
+    <Content Include="Assets\images\bacalhau-3.jpg" />
+    <Content Include="Assets\images\bacalhau-4.jpg" />
+    <Content Include="Assets\images\barbecue-1.jpg" />
+    <Content Include="Assets\images\barbecue-2.jpg" />
+    <Content Include="Assets\images\brazilian-pizza-1.jpg" />
+    <Content Include="Assets\images\brigadeiro-1.jpg" />
+    <Content Include="Assets\images\caranguejo-1.jpg" />
+    <Content Include="Assets\images\caranguejo-2.jpg" />
+    <Content Include="Assets\images\caranguejo-3.jpg" />
+    <Content Include="Assets\images\cerveja-1.jpg" />
+    <Content Include="Assets\images\coxinha.jpg" />
+    <Content Include="Assets\images\feijoada-1.jpeg" />
+    <Content Include="Assets\images\feijoada-1.jpg" />
+    <Content Include="Assets\images\feijoada-2.jpeg" />
+    <Content Include="Assets\images\feijoada-2.jpg" />
+    <Content Include="Assets\images\feijoada-3.jpg" />
+    <Content Include="Assets\images\feijoada-4.jpg" />
+    <Content Include="Assets\images\feijoada-5.jpg" />
+    <Content Include="Assets\images\feijoada-6.jpg" />
+    <Content Include="Assets\images\filet-parmiggiana-1.jpg" />
+    <Content Include="Assets\images\guarana-1.jpg" />
+    <Content Include="Assets\images\macaxeira-1.jpg" />
+    <Content Include="Assets\images\macaxeira-2.jpg" />
+    <Content Include="Assets\images\macaxeira-3.jpg" />
+    <Content Include="Assets\images\macaxeira-4.jpg" />
+    <Content Include="Assets\images\pancakes-1.jpg" />
+    <Content Include="Assets\images\pf-1.jpg" />
+    <Content Include="Assets\images\pf-2.jpg" />
+    <Content Include="Assets\images\pf-3.jpg" />
+    <Content Include="Assets\images\pirao-1.jpg" />
+    <Content Include="Assets\images\pirao-2.jpg" />
+    <Content Include="Assets\images\pirao-3.jpg" />
+    <Content Include="Assets\images\pirao-4.JPG" />
+    <Content Include="Assets\images\porco-1.JPG" />
+    <Content Include="Assets\images\porco-2.jpg" />
+    <Content Include="Assets\images\porco-3.JPG" />
+    <Content Include="Assets\images\tapioca-1.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -238,7 +277,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Assets\images\" />
     <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
