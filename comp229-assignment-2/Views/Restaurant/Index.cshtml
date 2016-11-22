@@ -4,6 +4,20 @@
     ViewBag.Title = "Index";
 }
 
+<h1>BraChinazilian Restaurant</h1>
+<p>Prepare to dream with the best food of the city... BraChinazilian Restaurant brings to you what is the best in Brazil and China.</p>
+
+<h1>Our main dishes</h1>
+
+<div class="row ">
+    @foreach (var dish in Model) {
+        <div class="dish col-md-6">
+            Name: @dish.name
+            Description: @dish.description
+        </div>
+    }
+</div>
+
 @section top {
 
     <div id="links" style="display:none;">
