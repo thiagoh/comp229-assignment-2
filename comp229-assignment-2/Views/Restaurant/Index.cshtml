@@ -6,40 +6,59 @@
 
 @section top {
 
-    <div class="unslider automatic-slider">
-        <ul>
-            <li><img src="~/Assets/images/carrousel/1.jpg" /></li>
-            <li><img src="~/Assets/images/carrousel/2.jpg" /></li>
-            <li><img src="~/Assets/images/carrousel/3.jpg" /></li>
-            <li><img src="~/Assets/images/carrousel/4.jpg" /></li>
-            <li><img src="~/Assets/images/carrousel/5.jpg" /></li>
-            <li><img src="~/Assets/images/carrousel/6.jpg" /></li>
-            <li><img src="~/Assets/images/carrousel/7.jpg" /></li>
-            <li><img src="~/Assets/images/carrousel/8.jpg" /></li>
-            <li><img src="~/Assets/images/carrousel/9.jpg" /></li>
-        </ul>
+    <div id="links" style="display:none;">
+    </div>
+    <!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
+    <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+        <div class="slides"></div>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <ol class="indicator"></ol>
     </div>
 }
 
 @section styles {
-    <link href="~/Content/unslider.css" rel="stylesheet" />
+    <link href="~/Content/blueimp-gallery.min.css" rel="stylesheet" />
 }
 
 @section scripts {
-    <script src="~/Scripts/unslider.js"></script>
+    <script src="~/Scripts/blueimp-gallery.js"></script>
     <script>
-        (function () {
+        $(function () {
 
-            'use strict';
+            var carouselLinks = []
+            var linksContainer = $('#links')
+            var photos = ['/Assets/images/carrousel/1.jpg',
+                            '/Assets/images/carrousel/2.jpg',
+                            '/Assets/images/carrousel/3.jpg',
+                            '/Assets/images/carrousel/4.jpg',
+                            '/Assets/images/carrousel/5.jpg',
+                            '/Assets/images/carrousel/6.jpg',
+                            '/Assets/images/carrousel/7.jpg',
+                            '/Assets/images/carrousel/8.jpg',
+                            '/Assets/images/carrousel/9.jpg', ];
+            // Add the demo images as links with thumbnails to the page:
+            $.each(photos, function (index, photo) {
+                $('<a/>')
+                  .append($('<img>').prop('src', photo))
+                  .prop('href', photo)
+                  .prop('title', '')
+                  .attr('data-gallery', '')
+                  .appendTo(linksContainer);
 
-            $(function () {
-                $('.automatic-slider').unslider({
-                    animation: 'fade',
-                    autoplay: true,
-                    arrows: false
-                });
+                carouselLinks.push({
+                    href: photo,
+                    title: ''
+                })
             });
 
-        }());
+            blueimp.Gallery(carouselLinks,
+        {
+            container: '#blueimp-gallery-carousel',
+            carousel: true,
+            hidePageScrollbars: true,
+            fullScreen: true
+        });
+        });
     </script>
 }
