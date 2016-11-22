@@ -1,0 +1,45 @@
+﻿@model IEnumerable<comp229_assignment_2.Models.Dish>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@section top {
+
+    <div class="unslider automatic-slider">
+        <ul>
+            <li><img src="~/Assets/images/carrousel/1.jpg" /></li>
+            <li><img src="~/Assets/images/carrousel/2.jpg" /></li>
+            <li><img src="~/Assets/images/carrousel/3.jpg" /></li>
+            <li><img src="~/Assets/images/carrousel/4.jpg" /></li>
+            <li><img src="~/Assets/images/carrousel/5.jpg" /></li>
+            <li><img src="~/Assets/images/carrousel/6.jpg" /></li>
+            <li><img src="~/Assets/images/carrousel/7.jpg" /></li>
+            <li><img src="~/Assets/images/carrousel/8.jpg" /></li>
+            <li><img src="~/Assets/images/carrousel/9.jpg" /></li>
+        </ul>
+    </div>
+}
+
+@section styles {
+    <link href="~/Content/unslider.css" rel="stylesheet" />
+}
+
+@section scripts {
+    <script src="~/Scripts/unslider.js"></script>
+    <script>
+        (function () {
+
+            'use strict';
+
+            $(function () {
+                $('.automatic-slider').unslider({
+                    animation: 'fade',
+                    autoplay: true,
+                    arrows: false
+                });
+            });
+
+        }());
+    </script>
+}

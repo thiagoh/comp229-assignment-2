@@ -20,6 +20,9 @@ namespace comp229_assignment_2.Models {
         public string name { get; set; }
 
         [Required]
+        public DishOriginType type { get; set; }
+
+        [Required]
         [StringLength(1024)]
         public string description { get; set; }
 
@@ -28,4 +31,10 @@ namespace comp229_assignment_2.Models {
 
         public ICollection<string> pictures { get; set; }
     }
+
+    public enum DishOriginType {
+        Brazil,
+        China
+    }
+
 }
