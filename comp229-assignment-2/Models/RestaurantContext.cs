@@ -14,7 +14,7 @@ namespace comp229_assignment_2.Models {
         // Add a DbSet for each entity type that you want to include in your model. For more information 
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
-        public virtual DbSet<Dish> Dishes { get; set; }
+        public virtual DbSet<MenuItem> MenuItems { get; set; }
 
         protected virtual void OnModelCreating(DbModelBuilder modelBuilder) {
 

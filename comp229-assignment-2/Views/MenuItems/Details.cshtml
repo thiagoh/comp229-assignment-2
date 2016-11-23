@@ -1,4 +1,4 @@
-﻿@model comp229_assignment_2.Models.Dish
+﻿@model comp229_assignment_2.Models.MenuItem
 
 @{
     ViewBag.Title = "Details";
@@ -7,7 +7,7 @@
 <h2>Details</h2>
 
 <div>
-    <h4>Dish</h4>
+    <h4>MenuItem</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -32,6 +32,22 @@
 
         <dd>
             @Html.DisplayFor(model => model.price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.category)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.category)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.type)
         </dd>
 
     </dl>

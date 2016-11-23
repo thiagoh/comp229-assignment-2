@@ -1,4 +1,4 @@
-﻿@model IEnumerable<comp229_assignment_2.Models.Dish>
+﻿@model IEnumerable<comp229_assignment_2.Models.MenuItem>
 
 @{
     ViewBag.Title = "Index";
@@ -10,10 +10,10 @@
 <h1>Our main dishes</h1>
 
 <div class="row ">
-    @foreach (var dish in Model) {
+    @foreach (var menuItem in Model) {
         <div class="dish col-md-6">
-            Name: @dish.name
-            Description: @dish.description
+            Name: @menuItem.name
+            Description: @menuItem.description
         </div>
     }
 </div>

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<comp229_assignment_2.Models.Dish>
+﻿@model IEnumerable<comp229_assignment_2.Models.MenuItem>
 
 @{
     ViewBag.Title = "Index";
@@ -20,6 +20,12 @@
         <th>
             @Html.DisplayNameFor(model => model.price)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.type)
+        </th>
         <th></th>
     </tr>
 
@@ -33,6 +39,12 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.category)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.type)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.id }) |

@@ -23,7 +23,7 @@ namespace comp229_assignment_2.Controllers {
 
             ViewBag.files = files;
 
-            return View(db.Dishes.ToList());
+            return View(db.MenuItems.ToList());
         }
     }
 }
